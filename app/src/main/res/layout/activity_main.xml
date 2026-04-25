@@ -1,0 +1,144 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp">
+
+    <!-- LOGO -->
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/kpm1"
+        android:contentDescription="logo"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"/>
+
+    <!-- TITLE -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SIPRO"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="#1F3C88"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sistem Informasi Protokoler"
+        android:textColor="#555555"
+        android:textSize="14sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="4dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="KORPS PROTOKOLER MAHASISWA"
+        android:textColor="#E6A400"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UNIVERSITAS TEKNOLOGI BANDUNG"
+        android:textColor="#E6A400"
+        android:layout_gravity="center"
+        android:layout_marginBottom="30dp"/>
+
+    <!-- BPH CARD -->
+    <LinearLayout
+        android:id="@+id/btnBPH"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#1F3C88"
+        android:padding="16dp"
+        android:layout_marginTop="10dp"
+        android:clickable="true"
+        android:focusable="true">
+
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@android:drawable/ic_lock_lock"
+            android:contentDescription="icon"
+            app:tint="#FFFFFF"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BPH"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Badan Pengurus Harian"
+                android:textColor="#FFFFFF"
+                android:textSize="13sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- ANGGOTA CARD -->
+    <LinearLayout
+        android:id="@+id/btnAnggota"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#F4A300"
+        android:padding="16dp"
+        android:layout_marginTop="12dp"
+        android:clickable="true"
+        android:focusable="true">
+
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@android:drawable/ic_menu_myplaces"
+            android:contentDescription="icon"
+            app:tint="#FFFFFF"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Anggota"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Anggota Protokoler"
+                android:textColor="#FFFFFF"
+                android:textSize="13sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

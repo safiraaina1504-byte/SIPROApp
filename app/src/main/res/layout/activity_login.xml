@@ -1,0 +1,92 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    android:gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp">
+
+    <!-- LOGO -->
+    <ImageView
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:src="@drawable/kpm1"
+        android:layout_marginTop="40dp"
+        android:contentDescription="logo"/>
+
+    <!-- SIPRO -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SIPRO"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#1F3C88"
+        android:layout_marginTop="10dp"/>
+
+    <!-- WELCOME -->
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selamat datang Badan Pengurus Harian"
+        android:textSize="16sp"
+        android:textColor="#1F3C88"
+        android:layout_marginTop="10dp"
+        android:gravity="center"/>
+
+    <!-- DESC -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Silahkan login untuk masuk ke aplikasi"
+        android:textSize="13sp"
+        android:textColor="#666666"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"/>
+
+    <!-- EMAIL -->
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:padding="12dp"
+        android:background="@android:drawable/edit_text"
+        android:inputType="textEmailAddress"/>
+
+    <!-- PASSWORD -->
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        android:layout_marginTop="12dp"
+        android:background="@android:drawable/edit_text"/>
+
+    <!-- BUTTON LOGIN -->
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="LOGIN"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#4A6CF7"
+        android:layout_marginTop="30dp"/>
+
+    <!-- REGISTER -->
+    <TextView
+        android:id="@+id/tvRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Belum punya akun? Daftar"
+        android:textColor="#1F3C88"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"/>
+
+</LinearLayout>

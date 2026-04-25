@@ -1,0 +1,53 @@
+<resources>
+
+    <!-- APP -->
+    <string name="app_name">SIPRO</string>
+
+    <!-- USER -->
+    <string name="halo_user">Halo, User</string>
+    <string name="jabatan">Jabatan</string>
+
+    <!-- DASHBOARD -->
+    <string name="event_aktif">Event Aktif</string>
+    <string name="event_mendatang">Event Mendatang</string>
+    <string name="default_zero">0</string>
+
+    <!-- BUTTON -->
+    <string name="simpan">Simpan</string>
+    <string name="batal">Batal</string>
+    <string name="edit">Edit</string>
+    <string name="hapus">Hapus</string>
+
+    <!-- FORM EVENT -->
+    <string name="nama_event">Nama Event</string>
+    <string name="tanggal">Tanggal</string>
+    <string name="jam">Jam</string>
+    <string name="jumlah">Jumlah Peserta</string>
+
+    <!-- NOTIF -->
+    <string name="notifikasi">Notifikasi</string>
+    <string name="desc_notif">Buka Notifikasi</string>
+    <string name="default_badge">0</string>
+
+    <!-- LOGOUT -->
+    <string name="logout">Logout</string>
+    <string name="desc_logout">Keluar</string>
+    <string name="konfirmasi">Konfirmasi</string>
+    <string name="yakin_logout">Yakin mau logout?</string>
+
+    <!-- ICON -->
+    <string name="desc_profile">Foto Profil</string>
+    <string name="desc_tambah">Tambah Event</string>
+
+
+    <string name="semua">Semua</string>
+    <string name="jumlah_default">0</string>
+    <string name="cari_berkas">Cari berkas...</string>
+    <string name="tambah_berkas">Tambah berkas</string>
+    <string name="judul_berkas">Judul Berkas</string>
+    <string name="jenis_berkas">Jenis Berkas</string>
+    <string name="surat">Surat</string>
+    <string name="laporan">Laporan</string>
+    <string name="notulen">Notulen</string>
+
+</resources>

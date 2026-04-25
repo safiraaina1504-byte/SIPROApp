@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 🔥 IZIN FILE (ANDROID 10 KE BAWAH) -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SIPROApp">
+
+        <!-- 🔥 LAUNCHER -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- 🔐 AUTH -->
+        <activity android:name=".LoginActivity"/>
+        <activity android:name=".RegisterActivity"/>
+
+        <!-- 📊 DASHBOARD -->
+        <activity android:name=".DashboardBPHActivity"/>
+        <activity android:name=".DashboardAnggotaActivity"/>
+
+        <!-- 📁 FITUR -->
+        <activity android:name=".kas.KasActivity"/>
+
+        <!-- 🔥 FIX PENTING DI SINI -->
+        <activity
+            android:name=".berkas.BerkasActivity"
+            android:exported="true"/>
+
+        <activity android:name=".AnggotaActivity"/>
+        <activity android:name=".ProfilActivity"/>
+
+        <!-- 🔔 NOTIFIKASI -->
+        <activity android:name=".NotifikasiActivity"/>
+
+    </application>
+
+</manifest>

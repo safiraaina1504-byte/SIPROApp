@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F6FA">
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@drawable/bg_header">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/kpm1"
+                android:background="@drawable/circle_bg"
+                android:padding="6dp"
+                android:contentDescription="profile"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvNama"
+                    android:text="Halo, User"
+                    android:textColor="#FFF"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tvRole"
+                    android:text="Jabatan"
+                    android:textColor="#FFE082"
+                    android:textSize="12sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginEnd="10dp">
+
+                <ImageView
+                    android:id="@+id/btnNotif"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_notif"
+                    android:background="@drawable/circle_bg"
+                    android:padding="10dp"
+                    android:contentDescription="notif"/>
+
+                <TextView
+                    android:id="@+id/tvBadge"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_gravity="end|top"
+                    android:text="0"
+                    android:textSize="11sp"
+                    android:gravity="center"
+                    android:textColor="#FFF"
+                    android:background="#FF3D00"/>
+            </FrameLayout>
+
+            <ImageView
+                android:id="@+id/btnLogout"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:src="@drawable/ic_logout"
+                android:background="@drawable/circle_bg"
+                android:padding="10dp"
+                android:contentDescription="logout"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <!-- TOTAL ANGGOTA -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="110dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                app:cardCornerRadius="16dp"
+                app:cardBackgroundColor="#3B6EF5">
+
+                <LinearLayout
+                    android:padding="16dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <!-- 🔥 FIX DI SINI -->
+                    <TextView
+                        android:id="@+id/tvTotalAnggota"
+                        android:text="0"
+                        android:textColor="#FFF"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:text="Total Anggota"
+                        android:textColor="#FFF"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- EVENT -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="110dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="16dp"
+                app:cardBackgroundColor="#5C7CFA">
+
+                <LinearLayout
+                    android:padding="16dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tvJumlahEvent"
+                        android:text="0"
+                        android:textColor="#FFF"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:text="Event Aktif"
+                        android:textColor="#FFF"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@id/header"
+        android:layout_above="@id/bottomNav"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:text="Ringkasan"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_height="90dp"
+                android:layout_width="0dp"
+                android:background="#E8F5E9"
+                android:padding="12dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvSelesai"
+                    android:text="0"
+                    android:textColor="#00A86B"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:text="Event Selesai"
+                    android:textColor="#00A86B"
+                    android:textSize="12sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_height="90dp"
+                android:layout_width="0dp"
+                android:layout_marginStart="10dp"
+                android:background="#FFF3E0"
+                android:padding="12dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvPending"
+                    android:text="0"
+                    android:textColor="#FF5722"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:text="Tugas Pending"
+                    android:textColor="#FF5722"
+                    android:textSize="12sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:text="Event Mendatang"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvEvent"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/btnTambahEvent"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@id/bottomNav"
+        android:layout_margin="16dp"
+        android:background="@drawable/circle_bg"
+        android:padding="16dp"
+        android:src="@android:drawable/ic_input_add"
+        android:contentDescription="tambah"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNav"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/bottom_menu"/>
+
+</RelativeLayout>

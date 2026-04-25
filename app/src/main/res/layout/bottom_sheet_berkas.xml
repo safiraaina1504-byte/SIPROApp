@@ -1,0 +1,23 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/etJudul"
+        android:hint="Judul"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+
+    <Spinner
+        android:id="@+id/spJenis"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+
+    <Button
+        android:id="@+id/btnSimpan"
+        android:text="Simpan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
